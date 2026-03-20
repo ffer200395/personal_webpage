@@ -486,7 +486,7 @@ strong {
   border: 1px solid var(--col-border);
   border-radius: var(--radius-lg);
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-7);
   align-items: start;
   transition:
@@ -520,7 +520,6 @@ strong {
   font-weight: var(--fw-semibold);
   letter-spacing: -0.5px;
   line-height: 1.18;
-  max-width: 18ch;
   color: var(--col-text-primary);
   transition: color var(--dur-fast) var(--ease);
 }
@@ -560,16 +559,6 @@ strong {
   flex-direction: column;
   gap: var(--space-5);
   padding-top: var(--space-2);
-}
-
-/* Section title inside card (Qué hace, Tecnologías, etc.) */
-.project-section-title {
-  font-size: var(--fs-xs);
-  font-weight: var(--fw-medium);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--col-text-muted);
-  margin-bottom: var(--space-2);
 }
 
 /* Bullet list */
@@ -622,19 +611,13 @@ strong {
 .tech-tag {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--col-text-primary);
-  background: rgba(255, 255, 255, 0.02);
+  color: var(--col-text-secondary);
+  background: var(--col-surface);
   border: 1px solid var(--col-border);
   border-radius: var(--radius-sm);
   padding: 3px 9px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: border-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
-}
-
-.tech-tag:hover {
-  border-color: rgba(61, 139, 255, 0.28);
-  color: var(--col-accent);
 }
 
 /* Work philosophy */
