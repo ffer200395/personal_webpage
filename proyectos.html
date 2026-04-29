@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Proyectos de Data Science de Félix Francisco Enríquez Romero — Aplicaciones reales de ciencia de datos orientadas a resolver problemas de negocio." />
+        content="Proyectos de Data Science de Félix Francisco Enríquez Romero — Sistemas predictivos reales en salud, finanzas, seguros, legal y marketing." />
     <title>Proyectos — Félix Francisco Enríquez Romero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,73 +35,89 @@
             <div class="container">
 
                 <!-- Intro -->
-                <header class="projects-header">
+                <header class="projects-header animate-on-scroll">
                     <h1>Proyectos</h1>
-                    <p>Aplicaciones reales de ciencia de datos orientadas a resolver problemas de negocio.</p>
+                    <p>Sistemas predictivos listos para producción, con impacto real en los sectores de salud, finanzas,
+                        seguros, tecnología legal y marketing.</p>
                 </header>
 
                 <!-- Project list -->
                 <section class="project-list" aria-label="Lista de proyectos">
 
                     <!-- 01 -->
-                    <article class="project-card">
+                    <article class="project-card animate-on-scroll">
                         <div class="project-card-left">
                             <span class="project-index">01</span>
-                            <h2>Sistema de tasación de viviendas</h2>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-health">Healthcare</span>
+                                <span class="sector-badge sector-data">NLP</span>
+                            </div>
+                            <h2>NLP sobre 2M+ historiales clínicos — IIS La Fe</h2>
                             <p>
-                                Modelo predictivo desarrollado a partir de datos de anuncios inmobiliarios (Idealista),
-                                orientado a estimar el valor de mercado de viviendas en función de sus características.
+                                Clasificador de estado de tabaquismo desarrollado sobre texto clínico no estructurado
+                                usando NLP y Elasticsearch sobre un corpus de más de 2 millones de registros de
+                                pacientes
+                                del Hospital Universitario La Fe (Valencia).
                             </p>
-                            <p class="project-impact">Valoración automática para decisiones de compra, venta e
-                                inversión.</p>
+                            <p class="project-impact">Automatiza la extracción de variables clínicas clave para
+                                investigación epidemiológica a escala de hospital.</p>
                         </div>
                         <div class="project-card-right">
                             <div>
                                 <h4 class="project-section-title">Qué hace</h4>
                                 <ul class="project-bullets">
-                                    <li>Estima precios de vivienda con base en variables estructurales y contextuales
-                                    </li>
-                                    <li>Permite detectar sobrevaloraciones e infravaloraciones</li>
-                                    <li>Facilita la toma de decisiones en compra, venta e inversión</li>
+                                    <li>Clasifica el estado de tabaquismo desde texto clínico libre</li>
+                                    <li>Procesa y anota más de 2M de registros electrónicos de salud</li>
+                                    <li>Reduce el tiempo de etiquetado manual de historiales clínicos</li>
                                 </ul>
                             </div>
                             <div class="tech-block">
                                 <span class="tech-label">Tecnologías</span>
                                 <div class="tech-tags">
-                                    <span class="tech-tag">ML · regresión</span>
-                                    <span class="tech-tag">Feature engineering</span>
-                                    <span class="tech-tag">Validación de modelos</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">spaCy</span>
+                                    <span class="tech-tag">Elasticsearch</span>
+                                    <span class="tech-tag">NLP</span>
+                                    <span class="tech-tag">Regex</span>
+                                    <span class="tech-tag">EHR</span>
                                 </div>
                             </div>
                         </div>
                     </article>
 
                     <!-- 02 -->
-                    <article class="project-card">
+                    <article class="project-card animate-on-scroll">
                         <div class="project-card-left">
                             <span class="project-index">02</span>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-insurance">Seguros</span>
+                                <span class="sector-badge sector-data">ML</span>
+                            </div>
                             <h2>Sistema de priorización de rellamadas</h2>
                             <p>
-                                Sistema predictivo diseñado para aseguradoras con el objetivo de mejorar la conversión
-                                de presupuestos mediante la priorización inteligente de clientes.
+                                Sistema predictivo para una aseguradora dental que asigna probabilidades de conversión a
+                                cada cliente potencial, permitiendo que el equipo comercial enfoque su tiempo
+                                de forma estratégica mediante XGBoost e interpretabilidad de variables clave.
                             </p>
-                            <p class="project-impact">Priorización más eficiente del seguimiento comercial y mejor
-                                enfoque de conversión.</p>
+                            <p class="project-impact">Mejora la conversión de presupuestos y reduce el esfuerzo manual
+                                del equipo comercial.</p>
                         </div>
                         <div class="project-card-right">
                             <div>
                                 <h4 class="project-section-title">Qué hace</h4>
                                 <ul class="project-bullets">
-                                    <li>Asigna una probabilidad de conversión a cada cliente</li>
-                                    <li>Permite priorizar llamadas comerciales de forma estratégica</li>
-                                    <li>Optimiza el tiempo del equipo y aumenta la eficiencia comercial</li>
+                                    <li>Asigna una probabilidad de conversión a cada lead</li>
+                                    <li>Ordena la lista de rellamadas por potencial real</li>
+                                    <li>Explica los factores clave de cada predicción</li>
                                 </ul>
                             </div>
                             <div class="tech-block">
                                 <span class="tech-label">Tecnologías</span>
                                 <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">XGBoost</span>
                                     <span class="tech-tag">Clasificación</span>
-                                    <span class="tech-tag">Análisis de comportamiento</span>
+                                    <span class="tech-tag">SHAP</span>
                                     <span class="tech-tag">Interpretabilidad</span>
                                 </div>
                             </div>
@@ -109,32 +125,191 @@
                     </article>
 
                     <!-- 03 -->
-                    <article class="project-card">
+                    <article class="project-card animate-on-scroll">
                         <div class="project-card-left">
                             <span class="project-index">03</span>
-                            <h2>Clasificación de receptores olfativos y gustativos en artrópodos</h2>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-legal">Legal</span>
+                                <span class="sector-badge sector-data">ML</span>
+                            </div>
+                            <h2>Tasación inmobiliaria como pericia judicial</h2>
                             <p>
-                                Modelo de machine learning desarrollado para clasificar receptores sensoriales en
-                                artrópodos a partir de datos biológicos, facilitando el análisis funcional de
-                                secuencias.
+                                Modelo predictivo desarrollado a partir de datos de Idealista orientado a estimar el
+                                valor de mercado de viviendas. El modelo fue empleado como
+                                <strong>informe pericial en un proceso judicial</strong>, dotando de rigor estadístico a
+                                la valoración ante el tribunal.
                             </p>
-                            <p class="project-impact">Automatiza parte del análisis funcional y acelera la
-                                identificación de receptores relevantes.</p>
+                            <p class="project-impact">Valoración automática con respaldo estadístico utilizado como
+                                evidencia en procedimientos legales.</p>
                         </div>
                         <div class="project-card-right">
                             <div>
                                 <h4 class="project-section-title">Qué hace</h4>
                                 <ul class="project-bullets">
-                                    <li>Clasifica receptores olfativos y gustativos a partir de características
-                                        biológicas</li>
-                                    <li>Apoya la identificación funcional en estudios bioinformáticos</li>
-                                    <li>Reduce el esfuerzo manual en el análisis de datos genómicos</li>
+                                    <li>Estima precios de vivienda con variables estructurales y contextuales</li>
+                                    <li>Detecta sobrevaloraciones e infravaloraciones de mercado</li>
+                                    <li>Genera reportes con intervalos de confianza para uso pericial</li>
                                 </ul>
                             </div>
                             <div class="tech-block">
                                 <span class="tech-label">Tecnologías</span>
                                 <div class="tech-tags">
-                                    <span class="tech-tag">ML · biológico</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">scikit-learn</span>
+                                    <span class="tech-tag">ML · Regresión</span>
+                                    <span class="tech-tag">Feature engineering</span>
+                                    <span class="tech-tag">Validación de modelos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 04 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card-left">
+                            <span class="project-index">04</span>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-genai">GenAI</span>
+                                <span class="sector-badge sector-health">Healthcare</span>
+                            </div>
+                            <h2>Asistente de escritura médica con GPT</h2>
+                            <p>
+                                Aplicación generativa diseñada para asistir a profesionales sanitarios en la redacción
+                                de libros médicos especializados, combinando context retrieval con GPT y validación de
+                                terminología clínica.
+                            </p>
+                            <p class="project-impact">Reduce drásticamente el tiempo de redacción técnica manteniendo
+                                precisión clínica.</p>
+                        </div>
+                        <div class="project-card-right">
+                            <div>
+                                <h4 class="project-section-title">Qué hace</h4>
+                                <ul class="project-bullets">
+                                    <li>Genera y revisa texto médico especializado con LLMs</li>
+                                    <li>Mantiene coherencia terminológica a lo largo del documento</li>
+                                    <li>Integra referencias y contexto clínico de forma automática</li>
+                                </ul>
+                            </div>
+                            <div class="tech-block">
+                                <span class="tech-label">Tecnologías</span>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">LangChain</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">RAG</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 05 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card-left">
+                            <span class="project-index">05</span>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-finance">Finanzas</span>
+                                <span class="sector-badge sector-data">ML</span>
+                            </div>
+                            <h2>Sistema de predicción de fondos financieros — Forja ICC</h2>
+                            <p>
+                                Responsable técnico único del diseño y construcción de un sistema de forecasting
+                                híbrido para fondos de inversión. Gestión del equipo técnico y comunicación
+                                con stakeholders de negocio.
+                            </p>
+                            <p class="project-impact">Patrones invisibles en datos financieros convertidos en señales de
+                                inversión accionables.</p>
+                        </div>
+                        <div class="project-card-right">
+                            <div>
+                                <h4 class="project-section-title">Qué hace</h4>
+                                <ul class="project-bullets">
+                                    <li>Modela series temporales financieras con modelos híbridos</li>
+                                    <li>Genera señales de compra/venta con gestión de incertidumbre</li>
+                                    <li>Apoya decisiones de inversión con análisis predictivo</li>
+                                </ul>
+                            </div>
+                            <div class="tech-block">
+                                <span class="tech-label">Tecnologías</span>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Series temporales</span>
+                                    <span class="tech-tag">Modelado híbrido</span>
+                                    <span class="tech-tag">Forecasting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 06 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card-left">
+                            <span class="project-index">06</span>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-marketing">Marketing</span>
+                                <span class="sector-badge sector-data">NLP</span>
+                            </div>
+                            <h2>Análisis de sentimientos en RRSS para Mercadona</h2>
+                            <p>
+                                Sistema NLP de análisis de sentimientos sobre comentarios de redes sociales para
+                                proporcionar insights de mercado a proveedores de Mercadona en ForumData.
+                            </p>
+                            <p class="project-impact">Convierte opiniones de usuarios en inteligencia de mercado
+                                estructurada para la toma de decisiones de proveedores.</p>
+                        </div>
+                        <div class="project-card-right">
+                            <div>
+                                <h4 class="project-section-title">Qué hace</h4>
+                                <ul class="project-bullets">
+                                    <li>Clasifica el sentimiento de comentarios en redes sociales</li>
+                                    <li>Extrae tendencias y menciones clave por producto</li>
+                                    <li>Genera reportes de percepción de marca para proveedores</li>
+                                </ul>
+                            </div>
+                            <div class="tech-block">
+                                <span class="tech-label">Tecnologías</span>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">NLP</span>
+                                    <span class="tech-tag">Sentiment Analysis</span>
+                                    <span class="tech-tag">Social Media</span>
+                                    <span class="tech-tag">NLTK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 07 -->
+                    <article class="project-card animate-on-scroll">
+                        <div class="project-card-left">
+                            <span class="project-index">07</span>
+                            <div class="project-sectors">
+                                <span class="sector-badge sector-health">Bioinformática</span>
+                                <span class="sector-badge sector-data">ML</span>
+                            </div>
+                            <h2>Clasificación de receptores sensoriales en artrópodos</h2>
+                            <p>
+                                Modelo de machine learning para clasificar receptores olfativos y gustativos en
+                                artrópodos a partir de datos biológicos. Desarrollado como parte del Máster en
+                                Bioinformática y Bioestadística (UOC).
+                            </p>
+                            <p class="project-impact">Automatiza el análisis funcional de secuencias biológicas,
+                                acelerando la identificación de receptores relevantes.</p>
+                        </div>
+                        <div class="project-card-right">
+                            <div>
+                                <h4 class="project-section-title">Qué hace</h4>
+                                <ul class="project-bullets">
+                                    <li>Clasifica receptores sensoriales a partir de características biológicas</li>
+                                    <li>Apoya la identificación funcional en estudios bioinformáticos</li>
+                                    <li>Reduce el esfuerzo manual en análisis de datos genómicos</li>
+                                </ul>
+                            </div>
+                            <div class="tech-block">
+                                <span class="tech-label">Tecnologías</span>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">ML · Clasificación</span>
                                     <span class="tech-tag">Feature extraction</span>
                                     <span class="tech-tag">Bioinformática</span>
                                     <span class="tech-tag">Datos ómicos</span>
@@ -143,77 +318,14 @@
                         </div>
                     </article>
 
-                    <!-- 04 -->
-                    <article class="project-card">
-                        <div class="project-card-left">
-                            <span class="project-index">04</span>
-                            <h2>Modelos predictivos en entorno financiero</h2>
-                            <p>
-                                Desarrollo de modelos de machine learning aplicados a fondos financieros para generar
-                                insights accionables.
-                            </p>
-                            <p class="project-impact">Patrones invisibles convertidos en señales de inversión.</p>
-                        </div>
-                        <div class="project-card-right">
-                            <div>
-                                <h4 class="project-section-title">Qué hace</h4>
-                                <ul class="project-bullets">
-                                    <li>Identifica patrones en datos financieros</li>
-                                    <li>Apoya la toma de decisiones basada en datos</li>
-                                    <li>Mejora la capacidad de análisis de inversión</li>
-                                </ul>
-                            </div>
-                            <div class="tech-block">
-                                <span class="tech-label">Tecnologías</span>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">Series temporales</span>
-                                    <span class="tech-tag">Modelado predictivo</span>
-                                    <span class="tech-tag">Señales de inversión</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- 05 -->
-                    <article class="project-card">
-                        <div class="project-card-left">
-                            <span class="project-index">05</span>
-                            <h2>Procesamiento de lenguaje natural en salud</h2>
-                            <p>
-                                Aplicación de técnicas de NLP sobre historiales clínicos electrónicos para mejorar el
-                                análisis de información médica.
-                            </p>
-                            <p class="project-impact">Transforma historiales clínicos en información estructurada para
-                                su análisis y uso operativo.</p>
-                        </div>
-                        <div class="project-card-right">
-                            <div>
-                                <h4 class="project-section-title">Qué hace</h4>
-                                <ul class="project-bullets">
-                                    <li>Extracción de información relevante desde texto clínico</li>
-                                    <li>Mejora en la estructuración de datos no estructurados</li>
-                                    <li>Apoyo a procesos de investigación y análisis sanitario</li>
-                                </ul>
-                            </div>
-                            <div class="tech-block">
-                                <span class="tech-label">Tecnologías</span>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">NLP</span>
-                                    <span class="tech-tag">Regex</span>
-                                    <span class="tech-tag">Texto clínico</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
                 </section>
 
                 <!-- Work philosophy -->
-                <aside class="work-philosophy" aria-label="Enfoque de trabajo">
+                <aside class="work-philosophy animate-on-scroll" aria-label="Enfoque de trabajo">
                     <h3>Enfoque de trabajo</h3>
                     <p>
-                        Todos los proyectos comparten un mismo enfoque: transformar datos en herramientas útiles que
-                        ayuden a tomar decisiones reales, más allá del modelo en sí.
+                        Todos los proyectos comparten un mismo objetivo: transformar datos en herramientas útiles que
+                        ayuden a tomar decisiones reales — más allá del modelo en sí.
                     </p>
                 </aside>
 
