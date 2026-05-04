@@ -361,6 +361,17 @@ strong {
   margin-bottom: var(--space-3);
 }
 
+.hero-subtitle {
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  color: var(--col-accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: var(--space-4);
+  margin-top: 2px;
+}
+
 .hero-lead {
   font-size: var(--fs-base);
   color: var(--col-text-secondary);
@@ -760,6 +771,94 @@ strong {
   color: var(--col-accent);
   opacity: 1;
   transform: translateX(4px);
+}
+
+.contact-note {
+  margin-top: var(--space-5);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--col-text-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   CTA FLOTANTE
+============================================================ */
+.cta-float {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 11px var(--space-5);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: #fff;
+  background: var(--col-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(61, 139, 255, 0.35);
+  transition:
+    background var(--dur-mid) var(--ease),
+    box-shadow var(--dur-mid) var(--ease),
+    transform var(--dur-mid) var(--ease);
+}
+
+.cta-float:hover {
+  background: #5499ff;
+  box-shadow: 0 6px 28px rgba(61, 139, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.cta-float:active {
+  transform: translateY(0);
+}
+
+/* En la página de contacto, ocultarlo */
+.contact-page ~ .cta-float,
+body:has(.contact-page) .cta-float {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .cta-float {
+    bottom: var(--space-5);
+    right: var(--space-5);
+    padding: 10px var(--space-4);
+  }
+}
+
+/* ============================================================
+   LANG TOGGLE
+============================================================ */
+.lang-toggle {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.08em;
+  color: var(--col-text-muted);
+  background: transparent;
+  border: 1px solid var(--col-border);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  cursor: pointer;
+  margin-left: var(--space-3);
+  transition:
+    color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    background var(--dur-fast) var(--ease);
+  line-height: 1.6;
+}
+
+.lang-toggle:hover {
+  color: var(--col-accent);
+  border-color: rgba(61, 139, 255, 0.4);
+  background: var(--col-accent-dim);
 }
 
 /* ============================================================

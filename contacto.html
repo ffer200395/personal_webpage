@@ -22,9 +22,10 @@
         <div class="header-inner">
             <a href="index.html" class="site-logo">Félix F. Enríquez Romero</a>
             <nav class="site-nav" aria-label="Navegación principal">
-                <a href="index.html" class="nav-link">Sobre mí</a>
-                <a href="proyectos.html" class="nav-link">Proyectos</a>
-                <a href="contacto.html" class="nav-link is-active">Contacto</a>
+                <a href="index.html" class="nav-link" data-es="Sobre mí" data-en="About">Sobre mí</a>
+                <a href="proyectos.html" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="contacto.html" class="nav-link is-active" data-es="Contacto" data-en="Contact">Contacto</a>
+                <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch language">EN</button>
             </nav>
         </div>
     </header>
@@ -35,14 +36,14 @@
             <div class="container">
 
                 <header class="contact-header">
-                    <h1 class="contact-title">Hablemos</h1>
-                    <p>Estoy disponible para conversar sobre datos, productos o proyectos con impacto real.</p>
+                    <h1 class="contact-title" data-es="Hablemos" data-en="Let's talk">Hablemos</h1>
+                    <p data-es="Si tienes un proyecto de datos con impacto real, una pregunta técnica o simplemente quieres cruzar ideas — escríbeme." data-en="If you have a data project with real impact, a technical question, or just want to exchange ideas — write to me.">Si tienes un proyecto de datos con impacto real, una pregunta técnica o simplemente quieres cruzar ideas — escríbeme.</p>
                 </header>
 
                 <div class="contact-list" role="list">
 
                     <!-- Email -->
-                    <a href="mailto:felix.enriquez@example.com" class="contact-item" role="listitem" id="contact-email">
+                    <a href="mailto:felix@felixfrancisco.com" class="contact-item" role="listitem" id="contact-email">
                         <div class="contact-item-left">
                             <span class="contact-type">Email</span>
                             <span class="contact-value">felix@felixfrancisco.com</span>
@@ -50,11 +51,11 @@
                         <span class="contact-arrow" aria-hidden="true">→</span>
                     </a>
 
-                    <!-- Teléfono -->
+                    <!-- WhatsApp -->
                     <a href="https://api.whatsapp.com/send/?phone=34722795016&text&type=phone_number&app_absent=0"
                         class="contact-item" role="listitem" id="contact-phone">
                         <div class="contact-item-left">
-                            <span class="contact-type">Teléfono</span>
+                            <span class="contact-type">WhatsApp</span>
                             <span class="contact-value">+34 722 795 016</span>
                         </div>
                         <span class="contact-arrow" aria-hidden="true">→</span>
@@ -71,6 +72,8 @@
                     </a>
 
                 </div>
+
+                <p class="contact-note" data-es="Disponible para proyectos freelance, colaboraciones y consultoría en ML." data-en="Available for freelance projects, collaborations, and ML consulting.">Disponible para proyectos freelance, colaboraciones y consultoría en ML.</p>
 
             </div>
         </div>

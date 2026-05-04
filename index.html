@@ -22,9 +22,10 @@
     <div class="header-inner">
       <a href="index.html" class="site-logo">Félix F. Enríquez Romero</a>
       <nav class="site-nav" aria-label="Navegación principal">
-        <a href="index.html" class="nav-link is-active">Sobre mí</a>
-        <a href="proyectos.html" class="nav-link">Proyectos</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="index.html" class="nav-link is-active" data-es="Sobre mí" data-en="About">Sobre mí</a>
+        <a href="proyectos.html" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a>
+        <a href="contacto.html" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a>
+        <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch language">EN</button>
       </nav>
     </div>
   </header>
@@ -46,46 +47,40 @@
           <!-- Content -->
           <div class="hero-content">
 
-            <h1>Data Scientist &amp; ML Practitioner</h1>
+            <h1>Félix Francisco<br>Enríquez Romero</h1>
+            <p class="hero-subtitle" data-es="Data Scientist &amp; ML Practitioner" data-en="Data Scientist &amp; ML Practitioner">Data Scientist &amp; ML Practitioner</p>
 
-            <p class="hero-lead">
-              Más de 8 años transformando datos complejos en sistemas predictivos listos para producción, en los
-              sectores
-              de <strong>salud</strong>, <strong>finanzas</strong>, <strong>seguros</strong> y
-              <strong>marketing</strong>.
-              He procesado más de 2&nbsp;M de registros clínicos y formado a más de 150 profesionales en Machine
-              Learning.
+            <p class="hero-lead" data-es="Más de 8 años transformando datos complejos en sistemas predictivos listos para producción, en los sectores de salud, finanzas, seguros y marketing. He procesado más de 2 M de registros clínicos y formado a más de 150 profesionales en Machine Learning." data-en="Over 8 years turning complex data into production-ready predictive systems across healthcare, finance, insurance, and marketing. I've processed over 2M clinical records and trained more than 150 professionals in Machine Learning.">
+              Más de 8 años transformando datos complejos en sistemas predictivos listos para producción, en los sectores de salud, finanzas, seguros y marketing. He procesado más de 2&nbsp;M de registros clínicos y formado a más de 150 profesionales en Machine Learning.
             </p>
 
             <!-- Stats -->
             <div class="stat-row animate-on-scroll">
               <div class="stat-item">
                 <span class="stat-value">8+</span>
-                <span class="stat-label">años de experiencia</span>
+                <span class="stat-label" data-es="años de experiencia" data-en="years of experience">años de experiencia</span>
               </div>
               <div class="stat-sep"></div>
               <div class="stat-item">
                 <span class="stat-value">2M+</span>
-                <span class="stat-label">registros clínicos procesados</span>
+                <span class="stat-label" data-es="registros clínicos procesados" data-en="clinical records processed">registros clínicos procesados</span>
               </div>
               <div class="stat-sep"></div>
               <div class="stat-item">
                 <span class="stat-value">250+</span>
-                <span class="stat-label">estudiantes mentorizados</span>
+                <span class="stat-label" data-es="estudiantes mentorizados" data-en="students mentored">estudiantes mentorizados</span>
               </div>
             </div>
 
             <div class="bio-block animate-on-scroll">
-              <h3>Enfoque</h3>
-              <p>
-                Dominio del ciclo ML completo — desde la ingeniería de datos y la extracción de features hasta
-                la entrega en producción — con capacidad para comunicar resultados de forma clara a audiencias no
-                técnicas.
+              <h3 data-es="Cómo trabajo" data-en="How I work">Cómo trabajo</h3>
+              <p data-es="Dominio del ciclo ML completo — desde la ingeniería de datos y la extracción de features hasta la entrega en producción — con capacidad para comunicar resultados de forma clara a audiencias no técnicas." data-en="Full command of the ML lifecycle — from data engineering and feature extraction to production delivery — with the ability to communicate results clearly to non-technical audiences.">
+                Dominio del ciclo ML completo — desde la ingeniería de datos y la extracción de features hasta la entrega en producción — con capacidad para comunicar resultados de forma clara a audiencias no técnicas.
               </p>
             </div>
 
             <div class="bio-block animate-on-scroll">
-              <h3>Stack técnico</h3>
+              <h3 data-es="Stack" data-en="Stack">Stack</h3>
               <div class="skills-grid">
                 <span class="skill-pill">Python</span>
                 <span class="skill-pill">R</span>
@@ -124,6 +119,8 @@
       <span class="footer-year">2026</span>
     </div>
   </footer>
+
+  <a href="https://api.whatsapp.com/send/?phone=34722795016&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="cta-float" data-es="Escríbeme" data-en="Get in touch">Escríbeme</a>
 
   <script src="script.js"></script>
 
